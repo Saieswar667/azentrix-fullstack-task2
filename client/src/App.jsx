@@ -4,8 +4,8 @@ import { io } from "socket.io-client";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import "./index.css";
 
-const API = "http://localhost:5000/api";
-const socket = io("http://localhost:5000");
+const API = "https://azentrix-fullstack-task2.onrender.com/api";
+const socket = io("https://azentrix-fullstack-task2.onrender.com");
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("taskToken"));
